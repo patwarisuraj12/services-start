@@ -8,7 +8,8 @@ import { AccountsService } from '../accounts.service';
   selector: 'app-account',
   templateUrl: './account.component.html',
   styleUrls: ['./account.component.css'],
-  providers : [LoggingService, AccountsService]
+  providers : [LoggingService //, AccountsService
+              ]
 })
 export class AccountComponent {
   @Input() account: {name: string, status: string};
